@@ -18,9 +18,9 @@ class CreateBarangsTable extends Migration
             $table->foreignId('id_barang');
             $table->foreignId('id_unit');
             $table->string('image');
-            $table->string('kondisi_sebelum');
+            $table->string('kondisi_sebelum')->nullable();
             $table->integer('jumlah_sebelum');
-            $table->string('Kondisi_sesudah');
+            $table->string('Kondisi_sesudah')->nullable();
             $table->integer('jumlah_sesudah');
             $table->text('keterangan');
             $table->timestamps();
